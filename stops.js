@@ -34,8 +34,10 @@ const STOPS = [
     audio_en: "audio/2 House of Conspiracy 2 mins.mp3",
     audio_es: null,
     images: [
-      "images/audio_2/Plaza de la Conspiracion.jpg",
-      "images/audio_2/Walk to 2.jpg"
+      "images/audio_2/1_Gazebo.jpg",
+      "images/audio_2/2_Walk1.jpg",
+      "images/audio_2/3_Walk2.jpg",
+      "images/audio_2/4_Plaza de la Conspiracion.jpg"
     ]
   },
   {
@@ -44,7 +46,7 @@ const STOPS = [
     name_es: "Hidalgo",
     description_en: "Miguel Hidalgo y Costilla — priest, intellectual, and revolutionary — is revered as the Father of Mexican Independence. Though his famous Grito de Independencia rang out in nearby Dolores, his alliance with San Miguel's patriots was central to the uprising that began Mexico's long road to nationhood.",
     description_es: "Miguel Hidalgo y Costilla — sacerdote, intelectual y revolucionario — es venerado como el Padre de la Independencia de México. Aunque su famoso Grito de Independencia resonó en el cercano Dolores, su alianza con los patriotas de San Miguel fue fundamental en el levantamiento que inició el camino de México hacia la nación.",
-    lat: 20.91442,
+    lat: 20.91472,
     lng: -100.74375,
     audio_en: "audio/3 Hidalgo 6.10.mp3",
     audio_es: null,
