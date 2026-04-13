@@ -12,13 +12,14 @@ const STOPS = [
     id: "intro",
     name_en: "Introduction to San Miguel de Allende",
     name_es: "Introducción a San Miguel de Allende",
-    description_en: "Welcome to San Miguel de Allende — a UNESCO World Heritage city whose cobblestone streets and baroque skyline have changed little since the 18th century. This audio tour will guide you through the landmarks that shaped Mexico's struggle for independence and the culture that still pulses through the city today.",
-    description_es: "Bienvenido a San Miguel de Allende, ciudad Patrimonio de la Humanidad por la UNESCO, cuyas calles empedradas y horizonte barroco han cambiado poco desde el siglo XVIII. Este audiorecorrido te guiará por los monumentos que marcaron la lucha de México por la independencia y la cultura que aún late en la ciudad hoy.",
+    description_en: "Welcome to San Miguel de Allende — a UNESCO World Heritage city whose cobblestone streets and unique skyline have changed little since the 18th century. This audio tour will guide you through the landmarks that shaped Mexico's struggle for independence and the culture that still pulses through the city today.",
+    description_es: "Bienvenido a San Miguel de Allende, ciudad Patrimonio de la Humanidad por la UNESCO, cuyas calles empedradas y horizonte único han cambiado poco desde el siglo XVIII. Este audiorecorrido te guiará por los monumentos que marcaron la lucha de México por la independencia y la cultura que aún late en la ciudad hoy.",
     lat: 20.91396,
     lng: -100.74374,
     audio_en: "audio/1 Allende Intro 4 mins.mp3",
     audio_es: null,
     images: [
+      "images/audio_1/parroquia_nice.png",
       "images/audio_1/Ignacio.jpg",
       "images/audio_1/Parroquia10.jpg"
     ]
@@ -46,8 +47,8 @@ const STOPS = [
     name_es: "Hidalgo",
     description_en: "Miguel Hidalgo y Costilla — priest, intellectual, and revolutionary — is revered as the Father of Mexican Independence. Though his famous Grito de Independencia rang out in nearby Dolores, his alliance with San Miguel's patriots was central to the uprising that began Mexico's long road to nationhood.",
     description_es: "Miguel Hidalgo y Costilla — sacerdote, intelectual y revolucionario — es venerado como el Padre de la Independencia de México. Aunque su famoso Grito de Independencia resonó en el cercano Dolores, su alianza con los patriotas de San Miguel fue fundamental en el levantamiento que inició el camino de México hacia la nación.",
-    lat: 20.91472,
-    lng: -100.74375,
+    lat: 20.914229,
+    lng: -100.743920,
     audio_en: "audio/3 Hidalgo 6.10.mp3",
     audio_es: null,
     images: []
@@ -58,8 +59,8 @@ const STOPS = [
     name_es: "El Jardín Principal",
     description_en: "The Jardín is the beating heart of San Miguel — a shaded central plaza ringed by colonial arcades, outdoor cafés, and the iconic towers of the Parroquia. Locals and visitors gather here at all hours, from the morning tianguis to the evening paseo.",
     description_es: "El Jardín es el corazón palpitante de San Miguel: una plaza central sombreada rodeada de portales coloniales, cafés al aire libre y las icónicas torres de la Parroquia. Locales y visitantes se reúnen aquí a todas horas, desde el tianguis matutino hasta el paseo vespertino.",
-    lat: 20.914418,
-    lng: -100.743748,
+    lat: 20.914221,
+    lng: -100.743646,
     audio_en: "audio/4 Jardin 3.10.mp3",
     audio_es: null,
     images: [
@@ -68,10 +69,10 @@ const STOPS = [
   },
   {
     id: "san_juan",
-    name_en: "San Juan de Dios",
-    name_es: "San Juan de Dios",
-    description_en: "The Templo de San Juan de Dios is one of San Miguel's older colonial churches, established by the Order of Saint John of God. Its modest facade opens into an interior rich with devotional art — a quieter, more intimate counterpoint to the grandeur of the nearby Parroquia.",
-    description_es: "El Templo de San Juan de Dios es una de las iglesias coloniales más antiguas de San Miguel, fundada por la Orden de San Juan de Dios. Su modesta fachada da paso a un interior rico en arte devocional, un contrapunto más tranquilo e íntimo a la grandiosidad de la Parroquia cercana.",
+    name_en: "Fray Juan de San Miguel",
+    name_es: "Fray Juan de San Miguel",
+    description_en: "Fray Juan de San Miguel was the Franciscan friar who founded this settlement around 1542, planting the seed of what would grow into San Miguel de Allende. Known for his compassion and his close ties with the indigenous Chichimec people, he established the town near the natural springs at El Chorro that still flow today. He eventually moved on to found other communities, but his legacy endures in the city's very name.",
+    description_es: "Fray Juan de San Miguel fue el fraile franciscano que fundó este asentamiento alrededor de 1542, sembrando la semilla de lo que se convertiría en San Miguel de Allende. Conocido por su compasión y sus estrechos vínculos con el pueblo indígena chichimeca, estableció la población cerca de los manantiales de El Chorro que aún fluyen hoy. Con el tiempo partió a fundar otras comunidades, pero su legado perdura en el nombre mismo de la ciudad.",
     lat: 20.91392,
     lng: -100.74396,
     audio_en: "audio/5 San Juan 8.25 mins.mp3",
@@ -91,12 +92,13 @@ const STOPS = [
     audio_en: "audio/6 Parroquia Outside J 9.40.mp3",
     audio_es: null,
     images: [
-      "images/audio_6/6 Parroquia.jpg",
-      "images/audio_6/Parroquia12.jpg",
       "images/audio_6/4 San Raphael.jpg",
-      "images/audio_6/5 Office.jpg"
+      "images/audio_6/5 Office.jpg",
+      "images/audio_6/6 Parroquia.jpg",
+      "images/audio_6/7 Parroquia12.jpg"
     ],
-    parroquia_map: true
+    aerial_view: true,
+    old_parroquia: true
   },
   {
     id: "parroquia_interior",
@@ -117,7 +119,6 @@ const STOPS = [
       "images/audio_7/6  Virgin.jpg",
       "images/audio_7/7  St Pat.jpg"
     ],
-    parroquia_map: true
   },
   {
     id: "allende_house",

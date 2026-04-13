@@ -13,12 +13,12 @@
 
   <!-- ── Header ────────────────────────────────────────────────── -->
   <header id="site-header">
-    <a href="index.html" id="header-back" aria-label="Back to home">&#8592;</a>
     <div id="header-title">
       <span id="header-eyebrow">Audio Tour</span>
       <h1 id="header-name">San Miguel de Allende</h1>
     </div>
     <div id="header-actions">
+      <button id="instructions-btn" aria-label="Map instructions">?</button>
       <button id="test-audio-btn" aria-label="Test audio">&#9654; Test</button>
       <button id="legend-btn" aria-label="Show stop list">&#9776;</button>
       <button id="lang-toggle" aria-label="Switch to Spanish">ES</button>
@@ -38,6 +38,7 @@
       <!-- Image carousel -->
       <div id="image-carousel">
         <img id="carousel-img" src="" alt="" />
+        <button id="expand-btn" aria-label="Expand image">&#x26F6;</button>
         <button class="carousel-nav" id="img-prev" aria-label="Previous image">&#8249;</button>
         <button class="carousel-nav" id="img-next" aria-label="Next image">&#8250;</button>
         <div id="img-dots"></div>
@@ -49,10 +50,10 @@
         <h2 id="stop-name"></h2>
         <p id="stop-description"></p>
 
-        <!-- Parroquia aerial-map button — shown only for stops 6 & 7 -->
-        <button id="parroquia-map-btn" aria-label="View aerial map of the Parroquia">
-          &#9992;&nbsp; View Parroquia Map
-        </button>
+        <div id="stop-extra-btns">
+          <button id="aerial-view-btn"   aria-label="Aerial view of the Parroquia">&#9992;&nbsp; Aerial View</button>
+          <button id="old-parroquia-btn" aria-label="View old Parroquia image">&#128247;&nbsp; View Old Parroquia</button>
+        </div>
       </div>
 
       <!-- Audio player -->
@@ -78,10 +79,10 @@
   <!-- Dim overlay — tap to close sheet -->
   <div id="overlay"></div>
 
-  <!-- ── Parroquia aerial-map modal ────────────────────────────── -->
+  <!-- ── Aerial view modal ──────────────────────────────────────── -->
   <div id="parroquia-modal" aria-hidden="true" role="dialog" aria-label="Parroquia aerial map">
     <div id="parroquia-modal-inner">
-      <button id="parroquia-modal-close" aria-label="Close map">&#x2715;</button>
+      <button id="parroquia-modal-close" aria-label="Close">&#x2715;</button>
       <p class="modal-eyebrow">Aerial View</p>
       <h3 class="modal-title">Parroquia de San Miguel Arcángel</h3>
       <div id="parroquia-img-wrap">
@@ -93,6 +94,35 @@
         <strong>Stop 7</strong> guides you through the interior chapels and artworks.
       </p>
     </div>
+  </div>
+
+  <!-- ── Old Parroquia modal ───────────────────────────────────── -->
+  <div id="old-parroquia-modal" aria-hidden="true" role="dialog" aria-label="Old Parroquia image">
+    <div id="old-parroquia-modal-inner">
+      <button id="old-parroquia-close" aria-label="Close">&#x2715;</button>
+      <p class="modal-eyebrow">Historical Image</p>
+      <h3 class="modal-title">The Old Parroquia</h3>
+      <div class="modal-img-wrap">
+        <img src="images/old_parroquia/Parroquia viejo.png"
+             alt="The original Parroquia de San Miguel Arcángel" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Mapping page instructions modal ──────────────────────── -->
+  <div id="instructions-modal" aria-hidden="true" role="dialog" aria-label="Map instructions">
+    <div id="instructions-modal-inner">
+      <button id="instructions-close" aria-label="Close">&#x2715;</button>
+      <p class="modal-eyebrow">How To Use This Map</p>
+      <h3 class="modal-title">Mapping Page Instructions</h3>
+      <p id="instructions-text">This will be your main control page as you navigate through the different stops on the tour. Each number indicates the position you should be in to listen to each audio. For instance, number one is located in front of the Parroquia. Once you find your location, press number one on the map and you will be taken to the audio screen. Press the start arrow and the audio will begin. When you finish the first audio, press the back button near the upper left and return to the map. Find your position for second audio, tap number two. Continue in this manner throughout the tour.</p>
+    </div>
+  </div>
+
+  <!-- ── Expand image modal ────────────────────────────────────── -->
+  <div id="expand-modal" aria-hidden="true" role="dialog" aria-label="Full size image">
+    <button id="expand-close" aria-label="Close">&#x2715;</button>
+    <img id="expand-img" src="" alt="" />
   </div>
 
   <script src="stops.js"></script>
