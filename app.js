@@ -38,9 +38,12 @@
   const expandImg          = document.getElementById('expand-img');
   const expandClose        = document.getElementById('expand-close');
   const aerialViewBtn      = document.getElementById('aerial-view-btn');
+  const interiorMapBtn     = document.getElementById('interior-map-btn');
   const oldParroquiaBtn    = document.getElementById('old-parroquia-btn');
   const parroquiaModal     = document.getElementById('parroquia-modal');
   const parroquiaClose     = document.getElementById('parroquia-modal-close');
+  const interiorMapModal   = document.getElementById('interior-map-modal');
+  const interiorMapClose   = document.getElementById('interior-map-close');
   const oldParroquiaModal  = document.getElementById('old-parroquia-modal');
   const oldParroquiaClose  = document.getElementById('old-parroquia-close');
   const instructionsBtn    = document.getElementById('instructions-btn');
@@ -128,6 +131,7 @@
 
     // Show/hide stop-specific buttons
     aerialViewBtn.style.display   = stop.aerial_view   ? 'inline-block' : 'none';
+    interiorMapBtn.style.display  = stop.interior_map  ? 'inline-block' : 'none';
     oldParroquiaBtn.style.display = stop.old_parroquia ? 'inline-block' : 'none';
 
     updateLanguage(stop);
@@ -232,6 +236,22 @@
     if (e.target === parroquiaModal) closeAerialModal();
   });
 
+  // ── Interior map modal ─────────────────────────────────────────
+  interiorMapBtn.addEventListener('click', function () {
+    interiorMapModal.classList.add('open');
+    interiorMapModal.setAttribute('aria-hidden', 'false');
+  });
+
+  function closeInteriorMapModal() {
+    interiorMapModal.classList.remove('open');
+    interiorMapModal.setAttribute('aria-hidden', 'true');
+  }
+
+  interiorMapClose.addEventListener('click', closeInteriorMapModal);
+  interiorMapModal.addEventListener('click', function (e) {
+    if (e.target === interiorMapModal) closeInteriorMapModal();
+  });
+
   // ── Old Parroquia modal ────────────────────────────────────────
   oldParroquiaBtn.addEventListener('click', function () {
     oldParroquiaModal.classList.add('open');
@@ -331,6 +351,7 @@
     if (e.key !== 'Escape') return;
     if (expandModal.classList.contains('open'))        closeExpand();
     else if (parroquiaModal.classList.contains('open'))    closeAerialModal();
+    else if (interiorMapModal.classList.contains('open'))  closeInteriorMapModal();
     else if (oldParroquiaModal.classList.contains('open')) closeOldParroquiaModal();
     else if (instructionsModal.classList.contains('open')) closeInstructions();
     else if (legendModal.classList.contains('open'))       closeLegend();

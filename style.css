@@ -493,7 +493,7 @@ html, body {
 /* ── Expand image button (carousel) ─────────────────────────── */
 #expand-btn {
   position: absolute;
-  top: 8px;
+  bottom: 8px;
   right: 8px;
   background: rgba(43, 26, 16, 0.60);
   color: var(--white);
@@ -539,6 +539,53 @@ html, body {
   background: var(--terracotta);
   color: var(--white);
 }
+
+/* ── Interior map modal ─────────────────────────────────────── */
+#interior-map-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(43, 26, 16, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition);
+}
+
+#interior-map-modal.open { opacity: 1; pointer-events: auto; }
+
+#interior-map-modal-inner {
+  background: var(--cream);
+  border-radius: 12px;
+  max-width: 560px;
+  width: 100%;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  position: relative;
+  padding: 24px 20px 20px;
+}
+
+#interior-map-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--parchment);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: var(--stone);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#interior-map-close:hover { color: var(--dark); }
 
 /* ── Old Parroquia modal ─────────────────────────────────────── */
 #old-parroquia-modal {

@@ -2,9 +2,6 @@
 // ─────────────────────────────────────────────────────────────────
 // To add a new stop: copy one object below, fill in all fields,
 // then drop your .mp3 into audio/ and photos into images/audio_N/.
-//
-// NOTE: There is also "audio/5 Fray Juan J 9.20.mp3" — an alternate
-// recording for the San Juan area — kept here for reference.
 // ─────────────────────────────────────────────────────────────────
 
 const STOPS = [
@@ -16,7 +13,7 @@ const STOPS = [
     description_es: "Bienvenido a San Miguel de Allende, ciudad Patrimonio de la Humanidad por la UNESCO, cuyas calles empedradas y horizonte único han cambiado poco desde el siglo XVIII. Este audiorecorrido te guiará por los monumentos que marcaron la lucha de México por la independencia y la cultura que aún late en la ciudad hoy.",
     lat: 20.91396,
     lng: -100.74374,
-    audio_en: "audio/1 Allende Intro 4 mins.mp3",
+    audio_en: "audio/1 Allende Intro  4 Mins.mp3",
     audio_es: null,
     images: [
       "images/audio_1/parroquia_nice.png",
@@ -32,7 +29,7 @@ const STOPS = [
     description_es: "En los años previos a 1810, este edificio fue uno de los lugares de reunión clandestina donde Ignacio Allende, Juan Aldama y otros patriotas planeaban en silencio la independencia de México. Las conversaciones sostenidas aquí ayudaron a poner en marcha el movimiento independentista.",
     lat: 20.91443,
     lng: -100.74353,
-    audio_en: "audio/2 House of Conspiracy 2 mins.mp3",
+    audio_en: "audio/2 House of Conspiracy.mp3",
     audio_es: null,
     images: [
       "images/audio_2/1_Gazebo.jpg",
@@ -71,11 +68,11 @@ const STOPS = [
     id: "san_juan",
     name_en: "Fray Juan de San Miguel",
     name_es: "Fray Juan de San Miguel",
-    description_en: "Fray Juan de San Miguel was the Franciscan friar who founded this settlement around 1542, planting the seed of what would grow into San Miguel de Allende. Known for his compassion and his close ties with the indigenous Chichimec people, he established the town near the natural springs at El Chorro that still flow today. He eventually moved on to found other communities, but his legacy endures in the city's very name.",
-    description_es: "Fray Juan de San Miguel fue el fraile franciscano que fundó este asentamiento alrededor de 1542, sembrando la semilla de lo que se convertiría en San Miguel de Allende. Conocido por su compasión y sus estrechos vínculos con el pueblo indígena chichimeca, estableció la población cerca de los manantiales de El Chorro que aún fluyen hoy. Con el tiempo partió a fundar otras comunidades, pero su legado perdura en el nombre mismo de la ciudad.",
+    description_en: "Fray Juan de San Miguel was the Franciscan friar who founded this settlement around 1542, planting the seed of what would grow into San Miguel de Allende. Known for his compassion and his close ties with the indigenous Chichimec people, he first established the town five kilometers to the west near the Río Laja. It was later moved to where we find it today. He eventually moved on to found other communities, but his legacy endures in the city's very name.",
+    description_es: "Fray Juan de San Miguel fue el fraile franciscano que fundó este asentamiento alrededor de 1542, sembrando la semilla de lo que se convertiría en San Miguel de Allende. Conocido por su compasión y sus estrechos vínculos con el pueblo indígena chichimeca, estableció la población originalmente cinco kilómetros al oeste, cerca del Río Laja. Más tarde fue trasladada al lugar donde la encontramos hoy. Con el tiempo partió a fundar otras comunidades, pero su legado perdura en el nombre mismo de la ciudad.",
     lat: 20.91392,
     lng: -100.74396,
-    audio_en: "audio/5 San Juan 8.25 mins.mp3",
+    audio_en: "audio/5 Fray Juan J 9.20.mp3",
     audio_es: null,
     images: [
       "images/audio_5/5-San Juan.jpg"
@@ -119,6 +116,7 @@ const STOPS = [
       "images/audio_7/6  Virgin.jpg",
       "images/audio_7/7  St Pat.jpg"
     ],
+    interior_map: true
   },
   {
     id: "allende_house",
