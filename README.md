@@ -43,6 +43,6 @@ images/         Photos go here
 
 1. Push this repository to GitHub.
 2. In the repository settings on GitHub, go to **Pages** → set the source to the `main` branch → click Save.
-3. GitHub will give you a free public URL (e.g., `https://yourusername.github.io/SMD_audio_tour`).
+3. GitHub will give you a free public URL (e.g., `https://yourusername.github.io/SMA_audio_tour`).
 
 To use a custom domain (e.g., `smaaudiotour.com`), register one at [Namecheap](https://www.namecheap.com) (~$12/year) and follow GitHub's [custom domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).

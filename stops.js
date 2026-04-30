@@ -48,7 +48,9 @@ const STOPS = [
     lng: -100.743920,
     audio_en: "audio/3 Hidalgo 6.10.mp3",
     audio_es: null,
-    images: []
+    images: [
+      "images/audio_3/Hidalgo.jpg"
+    ]
   },
   {
     id: "jardin",
