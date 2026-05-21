@@ -139,6 +139,7 @@
     sheet.classList.add('open');
     sheet.setAttribute('aria-hidden', 'false');
     overlay.classList.add('visible');
+    instructionsBtn.style.display = 'none'; // avoid overlapping the audio player
   }
 
   // ── Image carousel ─────────────────────────────────────────────
@@ -339,6 +340,7 @@
     sheet.classList.remove('open');
     sheet.setAttribute('aria-hidden', 'true');
     overlay.classList.remove('visible');
+    instructionsBtn.style.display = ''; // restore on the map view
     if (activePinEl) { activePinEl.classList.remove('active'); activePinEl = null; }
     currentStop = null;
   }
