@@ -50,7 +50,8 @@ const STOPS = [
     audio_es: null,
     images: [
       "images/audio_3/Hidalgo.jpg"
-    ]
+    ],
+    imagePositions: { 0: "center 20%" }
   },
   {
     id: "jardin",
@@ -78,7 +79,8 @@ const STOPS = [
     audio_es: null,
     images: [
       "images/audio_5/5-San Juan.jpg"
-    ]
+    ],
+    imagePositions: { 0: "center 20%" }
   },
   {
     id: "parroquia_exterior",
@@ -118,6 +120,7 @@ const STOPS = [
       "images/audio_7/6  Virgin.jpg",
       "images/audio_7/7  St Pat.jpg"
     ],
+    imagePositions: { 2: "center 20%" },
     interior_map: true
   },
   {

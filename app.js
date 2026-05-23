@@ -152,6 +152,9 @@
     carousel.style.display = 'block';
     carouselImg.src = imgList[imgIdx];
     carouselImg.alt = currentStop ? (currentStop['name_' + lang] || '') : '';
+    // Optional per-image crop alignment, keyed by image index (e.g. "center 20%" for portraits)
+    var positions = (currentStop && currentStop.imagePositions) || {};
+    carouselImg.style.objectPosition = positions[imgIdx] || 'center';
     carouselImg.onerror = function () {
       if (imgIdx < imgList.length - 1) { imgIdx++; renderCarousel(); }
       else { carousel.style.display = 'none'; }
