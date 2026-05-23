@@ -120,7 +120,7 @@ const STOPS = [
       "images/audio_7/6  Virgin.jpg",
       "images/audio_7/7  St Pat.jpg"
     ],
-    imagePositions: { 2: "center 20%" },
+    imagePositions: { 2: "center 20%", 6: "left bottom" },
     interior_map: true
   },
   {
