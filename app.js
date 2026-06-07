@@ -65,7 +65,7 @@
   // ── Map ────────────────────────────────────────────────────────
   const map = L.map('map', {
     center: [20.9142, -100.7440],
-    zoom: 16,
+    zoom: 18,
     zoomControl: true,
   });
 
@@ -73,6 +73,13 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 19,
   }).addTo(map);
+
+  // Frame the initial view tightly around pins 1–9 (pin 10 is farther
+  // northwest and would force the zoom out too much).
+  const initialBounds = L.latLngBounds(
+    STOPS.slice(0, 9).map(function (s) { return [s.lat, s.lng]; })
+  );
+  map.fitBounds(initialBounds, { padding: [40, 40] });
 
   // ── Live location ("blue dot") ────────────────────────────────
   var locationMarker = null;

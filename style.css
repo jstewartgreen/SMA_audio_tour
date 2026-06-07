@@ -1014,6 +1014,19 @@ body.landing {
   opacity: 0.9;
 }
 
+/* Hero tip */
+#hero-tip {
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--gold);
+  opacity: 0.85;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ── CTA buttons ────────────────────────────────────────────── */
 .lp-btn-primary {
   display: inline-flex;
