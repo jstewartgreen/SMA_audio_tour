@@ -33,6 +33,7 @@
   const imgPrev            = document.getElementById('img-prev');
   const imgNext            = document.getElementById('img-next');
   const imgDots            = document.getElementById('img-dots');
+  const imageCaption       = document.getElementById('image-caption');
   const expandBtn          = document.getElementById('expand-btn');
   const expandModal        = document.getElementById('expand-modal');
   const expandImg          = document.getElementById('expand-img');
@@ -162,6 +163,12 @@
     // Optional per-image crop alignment, keyed by image index (e.g. "center 20%" for portraits)
     var positions = (currentStop && currentStop.imagePositions) || {};
     carouselImg.style.objectPosition = positions[imgIdx] || 'center';
+
+    // Optional per-image caption, language-aware
+    var captions = (currentStop && currentStop['imageCaptions_' + lang]) || {};
+    var captionText = captions[imgIdx] || '';
+    imageCaption.textContent = captionText;
+    imageCaption.style.display = captionText ? 'block' : 'none';
     carouselImg.onerror = function () {
       if (imgIdx < imgList.length - 1) { imgIdx++; renderCarousel(); }
       else { carousel.style.display = 'none'; }
@@ -212,6 +219,12 @@
   function updateLanguage(stop) {
     stopName.textContent = stop['name_' + lang] || stop.name_en;
     stopDesc.textContent = stop['description_' + lang] || stop.description_en;
+
+    // Refresh caption in the active language
+    var captions = stop['imageCaptions_' + lang] || {};
+    var captionText = captions[imgIdx] || '';
+    imageCaption.textContent = captionText;
+    imageCaption.style.display = captionText ? 'block' : 'none';
 
     const src = stop['audio_' + lang] || stop.audio_en || '';
     if (player.getAttribute('src') !== src) {

@@ -491,6 +491,20 @@ html, body {
   outline: none;
 }
 
+/* ── Image caption (below carousel) ─────────────────────────── */
+#image-caption {
+  display: none;
+  background: var(--parchment);
+  color: var(--stone);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(122, 102, 82, 0.15);
+}
+
 /* ── Expand image button (carousel) ─────────────────────────── */
 #expand-btn {
   position: absolute;

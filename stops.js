@@ -57,8 +57,8 @@ const STOPS = [
     id: "jardin",
     name_en: "El Jardín Principal",
     name_es: "El Jardín Principal",
-    description_en: "The Jardín is the beating heart of San Miguel — a shaded central plaza ringed by colonial arcades, outdoor cafés, and the iconic towers of the Parroquia. Locals and visitors gather here at all hours, from the morning tianguis to the evening paseo.",
-    description_es: "El Jardín es el corazón palpitante de San Miguel: una plaza central sombreada rodeada de portales coloniales, cafés al aire libre y las icónicas torres de la Parroquia. Locales y visitantes se reúnen aquí a todas horas, desde el tianguis matutino hasta el paseo vespertino.",
+    description_en: "The Jardín is the beating heart of San Miguel — a shaded central plaza ringed by colonial arcades, outdoor cafés, and the iconic towers of the Parroquia. Locals and visitors gather here at all hours, to relax, gossip or to take a break from sightseeing.",
+    description_es: "El Jardín es el corazón palpitante de San Miguel: una plaza central sombreada rodeada de portales coloniales, cafés al aire libre y las icónicas torres de la Parroquia. Locales y visitantes se reúnen aquí a todas horas, para relajarse, charlar o tomar un descanso del turismo.",
     lat: 20.914221,
     lng: -100.743646,
     audio_en: "audio/4 Jardin 3.10.mp3",
@@ -98,6 +98,18 @@ const STOPS = [
       "images/audio_6/6 Parroquia.jpg",
       "images/audio_6/7 Parroquia12.jpg"
     ],
+    imageCaptions_en: {
+      0: "San Raphael Church",
+      1: "Church Offices",
+      2: "Parroquia",
+      3: "Facade"
+    },
+    imageCaptions_es: {
+      0: "Iglesia de San Rafael",
+      1: "Oficinas de la Iglesia",
+      2: "Parroquia",
+      3: "Fachada"
+    },
     aerial_view: true,
     old_parroquia: true
   },
