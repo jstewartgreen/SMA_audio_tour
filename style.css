@@ -1000,7 +1000,7 @@ body.landing {
 
 .lp-eyebrow {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1021,7 +1021,7 @@ body.landing {
 }
 
 #hero-tagline {
-  font-size: 17px;
+  font-size: 20px;
   color: var(--parchment);
   line-height: 1.6;
   margin-bottom: 36px;
@@ -1030,13 +1030,14 @@ body.landing {
 
 /* Hero tip */
 #hero-tip {
-  margin-top: 18px;
+  margin-top: 22px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
   color: var(--gold);
-  opacity: 0.85;
-  max-width: 360px;
+  max-width: 440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1045,15 +1046,15 @@ body.landing {
 .lp-btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: var(--terracotta);
   color: var(--white);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
-  padding: 14px 28px;
+  padding: 16px 32px;
   border-radius: 4px;
   transition: background var(--transition), transform 0.15s ease;
 }
@@ -1066,7 +1067,7 @@ body.landing {
 }
 
 .btn-arrow {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1;
 }
 
@@ -1076,7 +1077,7 @@ body.landing {
   color: var(--terracotta);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1098,7 +1099,7 @@ body.landing {
 }
 
 #preview-heading {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: normal;
   color: var(--dark);
   margin-bottom: 40px;
@@ -1124,8 +1125,8 @@ body.landing {
 }
 
 .card-num {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   background: var(--terracotta);
   color: var(--white);
   border-radius: 50%;
@@ -1133,20 +1134,20 @@ body.landing {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   flex-shrink: 0;
 }
 
 .card-name {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: normal;
   color: var(--dark);
   margin-bottom: 6px;
 }
 
 .card-desc {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--stone);
   line-height: 1.5;
 }
@@ -1179,14 +1180,14 @@ body.landing {
 }
 
 .step-icon {
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1;
 }
 
 .step-text {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--parchment);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .step-divider {
@@ -1200,10 +1201,10 @@ body.landing {
 #lp-footer {
   background: var(--dark);
   border-top: 1px solid rgba(200, 149, 58, 0.2);
-  padding: 20px 24px;
+  padding: 22px 24px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.06em;
   color: var(--stone);
 }

@@ -13,7 +13,7 @@ const STOPS = [
     description_es: "Bienvenido a San Miguel de Allende, ciudad Patrimonio de la Humanidad por la UNESCO, cuyas calles empedradas y horizonte único han cambiado poco desde el siglo XVIII. Este audiorecorrido te guiará por los monumentos que marcaron la lucha de México por la independencia y la cultura que aún late en la ciudad hoy.",
     lat: 20.91396,
     lng: -100.74374,
-    audio_en: "audio/1 Allende Intro  4 Mins.mp3",
+    audio_en: "audio/1 Intro 7-2026 3.55.mp3",
     audio_es: null,
     images: [
       "images/audio_1/parroquia_nice.png",
@@ -29,7 +29,7 @@ const STOPS = [
     description_es: "En los años previos a 1810, este edificio fue uno de los lugares de reunión clandestina donde Ignacio Allende, Juan Aldama y otros patriotas planeaban en silencio la independencia de México. Las conversaciones sostenidas aquí ayudaron a poner en marcha el movimiento independentista.",
     lat: 20.91443,
     lng: -100.74353,
-    audio_en: "audio/2 House of Conspiracy.mp3",
+    audio_en: "audio/2 Plaza Conspriacion 2.14.mp3",
     audio_es: null,
     images: [
       "images/audio_2/1_Gazebo.jpg",
@@ -46,7 +46,7 @@ const STOPS = [
     description_es: "Miguel Hidalgo y Costilla — sacerdote, intelectual y revolucionario — es venerado como el Padre de la Independencia de México. Aunque su famoso Grito de Independencia resonó en el cercano Dolores, su alianza con los patriotas de San Miguel fue fundamental en el levantamiento que inició el camino de México hacia la nación.",
     lat: 20.914229,
     lng: -100.743920,
-    audio_en: "audio/3 Hidalgo 6.10.mp3",
+    audio_en: "audio/3 Hidalgo 7-2026 4.40.mp3",
     audio_es: null,
     images: [
       "images/audio_3/Hidalgo.jpg"
@@ -61,7 +61,7 @@ const STOPS = [
     description_es: "El Jardín es el corazón palpitante de San Miguel: una plaza central sombreada rodeada de portales coloniales, cafés al aire libre y las icónicas torres de la Parroquia. Locales y visitantes se reúnen aquí a todas horas, para relajarse, charlar o tomar un descanso del turismo.",
     lat: 20.914221,
     lng: -100.743646,
-    audio_en: "audio/4 Jardin 3.10.mp3",
+    audio_en: "audio/4 Jardin 2026 3.04.mp3",
     audio_es: null,
     images: [
       "images/audio_4/Jardin.jpg"
@@ -75,7 +75,7 @@ const STOPS = [
     description_es: "Fray Juan de San Miguel fue el fraile franciscano que fundó este asentamiento alrededor de 1542, sembrando la semilla de lo que se convertiría en San Miguel de Allende. Conocido por su compasión y sus estrechos vínculos con el pueblo indígena chichimeca, estableció la población originalmente cinco kilómetros al oeste, cerca del Río Laja. Más tarde fue trasladada al lugar donde la encontramos hoy. Con el tiempo partió a fundar otras comunidades, pero su legado perdura en el nombre mismo de la ciudad.",
     lat: 20.91392,
     lng: -100.74396,
-    audio_en: "audio/5 Fray Juan J 9.20.mp3",
+    audio_en: "audio/5 Fray Juan J1 9.20.mp3",
     audio_es: null,
     images: [
       "images/audio_5/5-San Juan.jpg"
@@ -121,7 +121,7 @@ const STOPS = [
     description_es: "Al entrar, se revela todo el esplendor de la Parroquia: retablos dorados, capillas devocionales y siglos de fe acumulada. El interior ha sido el corazón espiritual de San Miguel durante más de tres siglos de bautizos, bodas y días de fiesta.",
     lat: 20.91351,
     lng: -100.74370,
-    audio_en: "audio/7 Parroquia Inside J 17.30.mp3",
+    audio_en: "audio/7 Parroquia Inside J1.mp3",
     audio_es: null,
     images: [
       "images/audio_7/1  St. Mike.jpg",
